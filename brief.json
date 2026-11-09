@@ -1,0 +1,155 @@
+{
+  "savedAt": "2026-10-09T17:19:37.145Z",
+  "tab": "tab-mv18cvz1",
+  "project": "opt2",
+  "styleId": "modern-indian",
+  "brief": {
+    "plot": {
+      "width": 8.15,
+      "depth": 16.5,
+      "unit": "m",
+      "facing": "E",
+      "corner": true,
+      "city": "Lucknow"
+    },
+    "context": {
+      "roads": [
+        {
+          "side": "E",
+          "width": 9000,
+          "name": "Front road"
+        },
+        {
+          "side": "S",
+          "width": 9144,
+          "name": "Side road"
+        }
+      ],
+      "neighbours": [
+        {
+          "side": "W",
+          "floors": 2,
+          "setback": 0,
+          "kind": "house"
+        },
+        {
+          "side": "N",
+          "floors": 1,
+          "setback": 0,
+          "kind": "house"
+        }
+      ],
+      "parks": [
+        {
+          "side": "E",
+          "depth": 60000,
+          "name": "Neighbourhood park",
+          "from": -60000,
+          "to": -12600
+        }
+      ],
+      "environment": "developing",
+      "trees": "lush",
+      "poles": false
+    },
+    "floors": {
+      "count": 3,
+      "stilt": false,
+      "basement": false,
+      "floorHeight": 3200,
+      "mumty": true
+    },
+    "family": {
+      "members": 5,
+      "elders": false,
+      "kids": true,
+      "workFromHome": true,
+      "guests": "often"
+    },
+    "rooms": {
+      "bedrooms": 5,
+      "attachedToilets": true,
+      "masterDress": true,
+      "puja": "niche",
+      "kitchen": "semi-open",
+      "servantRoom": false,
+      "study": false,
+      "store": true,
+      "parking": 1,
+      "liftProvision": true,
+      "utility": true
+    },
+    "vastu": "flexible",
+    "drama": {
+      "doubleHeight": [
+        "Dining",
+        "Living"
+      ],
+      "courtyard": true,
+      "skylight": false,
+      "glassSides": [
+        "E"
+      ],
+      "cantilever": true
+    },
+    "aesthetic": {
+      "style": "modern-indian",
+      "palette": "warm",
+      "materials": [
+        "Sandstone",
+        "Teak",
+        "Marble",
+        "Black metal",
+        "Terracotta"
+      ],
+      "references": [],
+      "mood": ""
+    },
+    "budget": "mid",
+    "priorities": [
+      "Natural light",
+      "Vastu",
+      "Low maintenance"
+    ]
+  },
+  "context": {
+    "roads": [
+      {
+        "side": "E",
+        "width": 9000,
+        "name": "Front road"
+      },
+      {
+        "side": "S",
+        "width": 9144,
+        "name": "Side road"
+      }
+    ],
+    "neighbours": [
+      {
+        "side": "W",
+        "floors": 2,
+        "setback": 0,
+        "kind": "house"
+      },
+      {
+        "side": "N",
+        "floors": 1,
+        "setback": 0,
+        "kind": "house"
+      }
+    ],
+    "parks": [
+      {
+        "side": "E",
+        "depth": 60000,
+        "name": "Neighbourhood park",
+        "from": -60000,
+        "to": -12600
+      }
+    ],
+    "environment": "developing",
+    "trees": "lush",
+    "poles": false
+  }
+}

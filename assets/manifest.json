@@ -1,0 +1,1354 @@
+{
+  "generated": "2026-10-09",
+  "license": "CC0 1.0 (public domain) - see LICENSE.md",
+  "notes": {
+    "textures": "Paths: tex/<key>/<file>. normal.jpg is OpenGL (+Y) convention, matching three.js. rough.jpg is roughness (greyscale). ao.jpg is ambient occlusion for aoMap (three r151+: set texture.channel; older: needs uv2). width/height give the colour-map aspect (concrete_smooth is 2:1). metal.jpg (metal_brushed only) is the metalness map. Colour maps are sRGB; others are linear.",
+    "hdri": "Equirectangular Radiance .hdr, load with RGBELoader.",
+    "models": "glTF 2.0 (.gltf + .bin + textures/ jpg, 1K). Real-world scale in metres (Poly Haven convention). Load with GLTFLoader; relative paths intact."
+  },
+  "textures": {
+    "asphalt": {
+      "source": "ambientCG",
+      "id": "Asphalt025A",
+      "url": "https://ambientcg.com/view?id=Asphalt025A",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 4.17
+    },
+    "brick_red": {
+      "source": "Poly Haven",
+      "id": "red_brick",
+      "url": "https://polyhaven.com/a/red_brick",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 2.62
+    },
+    "concrete_smooth": {
+      "source": "ambientCG",
+      "id": "Concrete034",
+      "url": "https://ambientcg.com/view?id=Concrete034",
+      "res": "1K",
+      "width": 1024,
+      "height": 512,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 1.25
+    },
+    "fabric_linen": {
+      "source": "ambientCG",
+      "id": "Fabric036",
+      "url": "https://ambientcg.com/view?id=Fabric036",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 4.59
+    },
+    "fabric_velvet": {
+      "source": "Poly Haven",
+      "id": "velour_velvet",
+      "url": "https://polyhaven.com/a/velour_velvet",
+      "res": "1K",
+      "width": 1024,
+      "height": 985,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 2.95
+    },
+    "fabric_velvet_neutral": {
+      "source": "Poly Haven",
+      "id": "velour_velvet",
+      "url": "https://polyhaven.com/a/velour_velvet",
+      "res": "1K",
+      "width": 1024,
+      "height": 985,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.0,
+      "derivedFrom": "fabric_velvet",
+      "note": "colour map desaturated to neutral; normal/rough/ao identical to fabric_velvet (variant added to this folder separately, not a direct download)"
+    },
+    "grass": {
+      "source": "ambientCG",
+      "id": "Grass001",
+      "url": "https://ambientcg.com/view?id=Grass001",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 5.56
+    },
+    "gravel": {
+      "source": "ambientCG",
+      "id": "Gravel023",
+      "url": "https://ambientcg.com/view?id=Gravel023",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 4.89
+    },
+    "kota_stone": {
+      "source": "ambientCG",
+      "id": "Travertine002",
+      "url": "https://ambientcg.com/view?id=Travertine002",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 1.4
+    },
+    "leather": {
+      "source": "ambientCG",
+      "id": "Leather023",
+      "url": "https://ambientcg.com/view?id=Leather023",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.52
+    },
+    "marble_beige": {
+      "source": "ambientCG",
+      "id": "Marble014",
+      "url": "https://ambientcg.com/view?id=Marble014",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 2.01
+    },
+    "marble_black": {
+      "source": "ambientCG",
+      "id": "Marble017",
+      "url": "https://ambientcg.com/view?id=Marble017",
+      "res": "2K",
+      "width": 2048,
+      "height": 2048,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 6.3
+    },
+    "marble_statuario": {
+      "source": "ambientCG",
+      "id": "Marble012",
+      "url": "https://ambientcg.com/view?id=Marble012",
+      "res": "2K",
+      "width": 2048,
+      "height": 2048,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 5.16,
+      "derivedFrom": "marble_white",
+      "note": "colour map whitened/neutralised (Statuario look); normal/rough identical to marble_white (variant added to this folder separately, not a direct download)"
+    },
+    "marble_white": {
+      "source": "ambientCG",
+      "id": "Marble012",
+      "url": "https://ambientcg.com/view?id=Marble012",
+      "res": "2K",
+      "width": 2048,
+      "height": 2048,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 8.32
+    },
+    "metal_brushed": {
+      "source": "ambientCG",
+      "id": "Metal009",
+      "url": "https://ambientcg.com/view?id=Metal009",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "metal.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 1.83
+    },
+    "pavers": {
+      "source": "ambientCG",
+      "id": "PavingStones038",
+      "url": "https://ambientcg.com/view?id=PavingStones038",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 4.0
+    },
+    "plaster_lime": {
+      "source": "ambientCG",
+      "id": "Plaster006",
+      "url": "https://ambientcg.com/view?id=Plaster006",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.51
+    },
+    "plaster_white": {
+      "source": "ambientCG",
+      "id": "Plaster001",
+      "url": "https://ambientcg.com/view?id=Plaster001",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.14
+    },
+    "rug_wool": {
+      "source": "ambientCG",
+      "id": "Carpet016",
+      "url": "https://ambientcg.com/view?id=Carpet016",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 4.59
+    },
+    "sandstone": {
+      "source": "Poly Haven",
+      "id": "sandstone_blocks_08",
+      "url": "https://polyhaven.com/a/sandstone_blocks_08",
+      "res": "2K",
+      "width": 2048,
+      "height": 2048,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.47
+    },
+    "stone_wall_rough": {
+      "source": "Poly Haven",
+      "id": "rustic_stone_wall_02",
+      "url": "https://polyhaven.com/a/rustic_stone_wall_02",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.04
+    },
+    "terrazzo": {
+      "source": "ambientCG",
+      "id": "Terrazzo013",
+      "url": "https://ambientcg.com/view?id=Terrazzo013",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 2.07
+    },
+    "tiles_hex": {
+      "source": "ambientCG",
+      "id": "Tiles071",
+      "url": "https://ambientcg.com/view?id=Tiles071",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.33
+    },
+    "tiles_large_grey": {
+      "source": "ambientCG",
+      "id": "Concrete010",
+      "url": "https://ambientcg.com/view?id=Concrete010",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 3.08
+    },
+    "tiles_pattern": {
+      "source": "ambientCG",
+      "id": "Tiles131",
+      "url": "https://ambientcg.com/view?id=Tiles131",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 5.01
+    },
+    "tiles_subway": {
+      "source": "ambientCG",
+      "id": "Tiles011",
+      "url": "https://ambientcg.com/view?id=Tiles011",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 1.99
+    },
+    "tiles_zellige": {
+      "source": "ambientCG",
+      "id": "Tiles034",
+      "url": "https://ambientcg.com/view?id=Tiles034",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 1.34
+    },
+    "tiles_zellige_white": {
+      "source": "ambientCG",
+      "id": "Tiles034",
+      "url": "https://ambientcg.com/view?id=Tiles034",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 1.06,
+      "derivedFrom": "tiles_zellige",
+      "note": "colour map recoloured to white zellige; normal/rough identical to tiles_zellige (variant added to this folder separately, not a direct download)"
+    },
+    "wood_deck": {
+      "source": "ambientCG",
+      "id": "Planks029L",
+      "url": "https://ambientcg.com/view?id=Planks029L",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 4.13
+    },
+    "wood_herringbone": {
+      "source": "Poly Haven",
+      "id": "herringbone_parquet",
+      "url": "https://polyhaven.com/a/herringbone_parquet",
+      "res": "2K",
+      "width": 2048,
+      "height": 2048,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 8.85
+    },
+    "wood_planks": {
+      "source": "Poly Haven",
+      "id": "wood_floor",
+      "url": "https://polyhaven.com/a/wood_floor",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 2.27
+    },
+    "wood_veneer": {
+      "source": "Poly Haven",
+      "id": "walnut_veneer",
+      "url": "https://polyhaven.com/a/walnut_veneer",
+      "res": "1K",
+      "width": 1024,
+      "height": 1024,
+      "files": [
+        "ao.jpg",
+        "color.jpg",
+        "normal.jpg",
+        "rough.jpg"
+      ],
+      "sizeMB": 1.87
+    }
+  },
+  "hdri": {
+    "sky_day": {
+      "source": "Poly Haven",
+      "id": "kloofendal_48d_partly_cloudy_puresky",
+      "url": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+      "res": "2K",
+      "file": "hdri/sky_day.hdr",
+      "sizeMB": 5.2,
+      "description": "Midday partly-cloudy sky with sun (pure sky, no ground)"
+    },
+    "sky_golden": {
+      "source": "Poly Haven",
+      "id": "syferfontein_6d_clear_puresky",
+      "url": "https://polyhaven.com/a/syferfontein_6d_clear_puresky",
+      "res": "2K",
+      "file": "hdri/sky_golden.hdr",
+      "sizeMB": 4.43,
+      "description": "Clear golden-hour sky, sun ~6 deg above horizon (pure sky)"
+    },
+    "sky_night": {
+      "source": "Poly Haven",
+      "id": "qwantani_dusk_2_puresky",
+      "url": "https://polyhaven.com/a/qwantani_dusk_2_puresky",
+      "res": "2K",
+      "file": "hdri/sky_night.hdr",
+      "sizeMB": 4.4,
+      "description": "Blue-hour / dusk sky after sunset (pure sky)"
+    },
+    "interior": {
+      "source": "Poly Haven",
+      "id": "small_empty_room_1",
+      "url": "https://polyhaven.com/a/small_empty_room_1",
+      "res": "2K",
+      "file": "hdri/interior.hdr",
+      "sizeMB": 5.87,
+      "description": "Bright empty room with windows, neutral (interior reflections)"
+    }
+  },
+  "models": [
+    {
+      "slug": "chandelier_01",
+      "source": "Poly Haven",
+      "id": "Chandelier_01",
+      "url": "https://polyhaven.com/a/Chandelier_01",
+      "category": "lighting/chandelier",
+      "gltf": "models/chandelier_01/Chandelier_01_1k.gltf",
+      "sizeMB": 1.25,
+      "description": "Brass chandelier with 6 white fabric shades",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "chandelier_02",
+      "source": "Poly Haven",
+      "id": "Chandelier_02",
+      "url": "https://polyhaven.com/a/Chandelier_02",
+      "category": "lighting/chandelier",
+      "gltf": "models/chandelier_02/Chandelier_02_1k.gltf",
+      "sizeMB": 1.13,
+      "description": "Brass chandelier with 5 white fabric shades, smaller",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "chandelier_03",
+      "source": "Poly Haven",
+      "id": "Chandelier_03",
+      "url": "https://polyhaven.com/a/Chandelier_03",
+      "category": "lighting/chandelier",
+      "gltf": "models/chandelier_03/Chandelier_03_1k.gltf",
+      "sizeMB": 1.3,
+      "description": "Crystal and brass candle-style chandelier",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "lantern_chandelier_01",
+      "source": "Poly Haven",
+      "id": "lantern_chandelier_01",
+      "url": "https://polyhaven.com/a/lantern_chandelier_01",
+      "category": "lighting/chandelier",
+      "gltf": "models/lantern_chandelier_01/lantern_chandelier_01_1k.gltf",
+      "sizeMB": 1.41,
+      "description": "Ornate metal-and-glass lantern pendant (foyer/porch)",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "modern_ceiling_lamp_01",
+      "source": "Poly Haven",
+      "id": "modern_ceiling_lamp_01",
+      "url": "https://polyhaven.com/a/modern_ceiling_lamp_01",
+      "category": "lighting/pendant",
+      "gltf": "models/modern_ceiling_lamp_01/modern_ceiling_lamp_01_1k.gltf",
+      "sizeMB": 0.42,
+      "description": "Modern opal glass globe pendant on rod",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "caged_hanging_light",
+      "source": "Poly Haven",
+      "id": "caged_hanging_light",
+      "url": "https://polyhaven.com/a/caged_hanging_light",
+      "category": "lighting/pendant",
+      "gltf": "models/caged_hanging_light/caged_hanging_light_1k.gltf",
+      "sizeMB": 2.92,
+      "description": "Industrial caged pendant light",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "ceiling_fan",
+      "source": "Poly Haven",
+      "id": "ceiling_fan",
+      "url": "https://polyhaven.com/a/ceiling_fan",
+      "category": "lighting/ceiling_fan",
+      "gltf": "models/ceiling_fan/ceiling_fan_1k.gltf",
+      "sizeMB": 1.79,
+      "description": "Modern 4-blade black ceiling fan with light",
+      "meshes": 2,
+      "nodes": 2
+    },
+    {
+      "slug": "desk_lamp_arm_01",
+      "source": "Poly Haven",
+      "id": "desk_lamp_arm_01",
+      "url": "https://polyhaven.com/a/desk_lamp_arm_01",
+      "category": "lighting/table_lamp",
+      "gltf": "models/desk_lamp_arm_01/desk_lamp_arm_01_1k.gltf",
+      "sizeMB": 2.74,
+      "description": "Orange articulated desk/table lamp (rigged)",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "industrial_pipe_lamp",
+      "source": "Poly Haven",
+      "id": "industrial_pipe_lamp",
+      "url": "https://polyhaven.com/a/industrial_pipe_lamp",
+      "category": "lighting/table_lamp",
+      "gltf": "models/industrial_pipe_lamp/industrial_pipe_lamp_1k.gltf",
+      "sizeMB": 2.3,
+      "description": "Industrial pipe table lamp with metal shade",
+      "meshes": 3,
+      "nodes": 3
+    },
+    {
+      "slug": "brass_diya_lantern",
+      "source": "Poly Haven",
+      "id": "brass_diya_lantern",
+      "url": "https://polyhaven.com/a/brass_diya_lantern",
+      "category": "lighting/decor",
+      "gltf": "models/brass_diya_lantern/brass_diya_lantern_1k.gltf",
+      "sizeMB": 1.88,
+      "description": "Brass diya lantern (Indian hanging lamp)",
+      "meshes": 3,
+      "nodes": 3
+    },
+    {
+      "slug": "sofa_02",
+      "source": "Poly Haven",
+      "id": "sofa_02",
+      "url": "https://polyhaven.com/a/sofa_02",
+      "category": "seating/sofa",
+      "gltf": "models/sofa_02/sofa_02_1k.gltf",
+      "sizeMB": 0.41,
+      "description": "Black tufted leather chesterfield sofa",
+      "meshes": 2,
+      "nodes": 2
+    },
+    {
+      "slug": "sofa_03",
+      "source": "Poly Haven",
+      "id": "sofa_03",
+      "url": "https://polyhaven.com/a/sofa_03",
+      "category": "seating/sofa",
+      "gltf": "models/sofa_03/sofa_03_1k.gltf",
+      "sizeMB": 0.64,
+      "description": "Classic carved-wood sofa with patterned upholstery",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "sofa_01",
+      "source": "Poly Haven",
+      "id": "Sofa_01",
+      "url": "https://polyhaven.com/a/Sofa_01",
+      "category": "seating/sofa",
+      "gltf": "models/sofa_01/Sofa_01_1k.gltf",
+      "sizeMB": 0.49,
+      "description": "Classic curved-back light grey upholstered sofa",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "mid_century_lounge_chair",
+      "source": "Poly Haven",
+      "id": "mid_century_lounge_chair",
+      "url": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "category": "seating/armchair",
+      "gltf": "models/mid_century_lounge_chair/mid_century_lounge_chair_1k.gltf",
+      "sizeMB": 1.99,
+      "description": "Mid-century swivel lounge chair, brown leather and walnut",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "modern_arm_chair_01",
+      "source": "Poly Haven",
+      "id": "modern_arm_chair_01",
+      "url": "https://polyhaven.com/a/modern_arm_chair_01",
+      "category": "seating/armchair",
+      "gltf": "models/modern_arm_chair_01/modern_arm_chair_01_1k.gltf",
+      "sizeMB": 2.57,
+      "description": "Modern armchair, black leather on wood frame",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "armchair_01",
+      "source": "Poly Haven",
+      "id": "ArmChair_01",
+      "url": "https://polyhaven.com/a/ArmChair_01",
+      "category": "seating/armchair",
+      "gltf": "models/armchair_01/ArmChair_01_1k.gltf",
+      "sizeMB": 0.73,
+      "description": "Classic grey upholstered armchair, carved dark wood",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "ottoman_01",
+      "source": "Poly Haven",
+      "id": "Ottoman_01",
+      "url": "https://polyhaven.com/a/Ottoman_01",
+      "category": "seating/ottoman",
+      "gltf": "models/ottoman_01/Ottoman_01_1k.gltf",
+      "sizeMB": 0.62,
+      "description": "Brown leather ottoman / pouf",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "modern_coffee_table_01",
+      "source": "Poly Haven",
+      "id": "modern_coffee_table_01",
+      "url": "https://polyhaven.com/a/modern_coffee_table_01",
+      "category": "table/coffee",
+      "gltf": "models/modern_coffee_table_01/modern_coffee_table_01_1k.gltf",
+      "sizeMB": 1.27,
+      "description": "Modern wood coffee table with stone top inlay",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "modern_coffee_table_02",
+      "source": "Poly Haven",
+      "id": "modern_coffee_table_02",
+      "url": "https://polyhaven.com/a/modern_coffee_table_02",
+      "category": "table/coffee",
+      "gltf": "models/modern_coffee_table_02/modern_coffee_table_02_1k.gltf",
+      "sizeMB": 2.82,
+      "description": "Modern coffee table with geometric fretwork top",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "coffee_table_round_01",
+      "source": "Poly Haven",
+      "id": "coffee_table_round_01",
+      "url": "https://polyhaven.com/a/coffee_table_round_01",
+      "category": "table/coffee",
+      "gltf": "models/coffee_table_round_01/coffee_table_round_01_1k.gltf",
+      "sizeMB": 1.49,
+      "description": "Round marble-top coffee table on chrome legs",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "side_table_01",
+      "source": "Poly Haven",
+      "id": "side_table_01",
+      "url": "https://polyhaven.com/a/side_table_01",
+      "category": "table/side",
+      "gltf": "models/side_table_01/side_table_01_1k.gltf",
+      "sizeMB": 0.48,
+      "description": "Simple light wood side table with shelf",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "side_table_tall_01",
+      "source": "Poly Haven",
+      "id": "side_table_tall_01",
+      "url": "https://polyhaven.com/a/side_table_tall_01",
+      "category": "table/side",
+      "gltf": "models/side_table_tall_01/side_table_tall_01_1k.gltf",
+      "sizeMB": 0.54,
+      "description": "Tall slim round dark-wood side table / plant stand",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "round_wooden_table_01",
+      "source": "Poly Haven",
+      "id": "round_wooden_table_01",
+      "url": "https://polyhaven.com/a/round_wooden_table_01",
+      "category": "dining/table",
+      "gltf": "models/round_wooden_table_01/round_wooden_table_01_1k.gltf",
+      "sizeMB": 0.52,
+      "description": "Round pedestal dining table, dark wood",
+      "meshes": 2,
+      "nodes": 2
+    },
+    {
+      "slug": "dining_table",
+      "source": "Poly Haven",
+      "id": "dining_table",
+      "url": "https://polyhaven.com/a/dining_table",
+      "category": "dining/table",
+      "gltf": "models/dining_table/dining_table_1k.gltf",
+      "sizeMB": 2.18,
+      "description": "Rectangular dining table with tablecloth on metal frame",
+      "meshes": 2,
+      "nodes": 2
+    },
+    {
+      "slug": "dining_chair_02",
+      "source": "Poly Haven",
+      "id": "dining_chair_02",
+      "url": "https://polyhaven.com/a/dining_chair_02",
+      "category": "dining/chair",
+      "gltf": "models/dining_chair_02/dining_chair_02_1k.gltf",
+      "sizeMB": 0.88,
+      "description": "Tufted brown leather dining chair",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "bar_chair_round_01",
+      "source": "Poly Haven",
+      "id": "bar_chair_round_01",
+      "url": "https://polyhaven.com/a/bar_chair_round_01",
+      "category": "seating/bar_stool",
+      "gltf": "models/bar_chair_round_01/bar_chair_round_01_1k.gltf",
+      "sizeMB": 2.68,
+      "description": "Round wooden bar stool with backrest",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "metal_stool_01",
+      "source": "Poly Haven",
+      "id": "metal_stool_01",
+      "url": "https://polyhaven.com/a/metal_stool_01",
+      "category": "seating/bar_stool",
+      "gltf": "models/metal_stool_01/metal_stool_01_1k.gltf",
+      "sizeMB": 2.18,
+      "description": "Tall metal bar stool with wooden seat",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "gothicbed_01",
+      "source": "Poly Haven",
+      "id": "GothicBed_01",
+      "url": "https://polyhaven.com/a/GothicBed_01",
+      "category": "bedroom/bed",
+      "gltf": "models/gothicbed_01/GothicBed_01_1k.gltf",
+      "sizeMB": 1.1,
+      "description": "Carved dark-wood single bed with mattress and linen",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "vintage_day_bed",
+      "source": "Poly Haven",
+      "id": "vintage_day_bed",
+      "url": "https://polyhaven.com/a/vintage_day_bed",
+      "category": "bedroom/bed",
+      "gltf": "models/vintage_day_bed/vintage_day_bed_1k.gltf",
+      "sizeMB": 2.31,
+      "description": "Vintage wooden daybed with cushions",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "classicnightstand_01",
+      "source": "Poly Haven",
+      "id": "ClassicNightstand_01",
+      "url": "https://polyhaven.com/a/ClassicNightstand_01",
+      "category": "bedroom/nightstand",
+      "gltf": "models/classicnightstand_01/ClassicNightstand_01_1k.gltf",
+      "sizeMB": 0.42,
+      "description": "Classic dark-wood open nightstand",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "potted_plant_01",
+      "source": "Poly Haven",
+      "id": "potted_plant_01",
+      "url": "https://polyhaven.com/a/potted_plant_01",
+      "category": "plants/potted",
+      "gltf": "models/potted_plant_01/potted_plant_01_1k.gltf",
+      "sizeMB": 6.03,
+      "description": "Small leafy plant in terracotta urn pot",
+      "meshes": 4,
+      "nodes": 4
+    },
+    {
+      "slug": "potted_plant_02",
+      "source": "Poly Haven",
+      "id": "potted_plant_02",
+      "url": "https://polyhaven.com/a/potted_plant_02",
+      "category": "plants/potted",
+      "gltf": "models/potted_plant_02/potted_plant_02_1k.gltf",
+      "sizeMB": 2.51,
+      "description": "Medium philodendron in terracotta pot",
+      "meshes": 3,
+      "nodes": 3
+    },
+    {
+      "slug": "potted_plant_04",
+      "source": "Poly Haven",
+      "id": "potted_plant_04",
+      "url": "https://polyhaven.com/a/potted_plant_04",
+      "category": "plants/potted",
+      "gltf": "models/potted_plant_04/potted_plant_04_1k.gltf",
+      "sizeMB": 2.02,
+      "description": "Small succulent (haworthia) in white pot",
+      "meshes": 4,
+      "nodes": 4
+    },
+    {
+      "slug": "planter_pot_clay",
+      "source": "Poly Haven",
+      "id": "planter_pot_clay",
+      "url": "https://polyhaven.com/a/planter_pot_clay",
+      "category": "plants/planter",
+      "gltf": "models/planter_pot_clay/planter_pot_clay_1k.gltf",
+      "sizeMB": 1.71,
+      "description": "Large empty terracotta planter pot",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "pachira_aquatica_01",
+      "source": "Poly Haven",
+      "id": "pachira_aquatica_01",
+      "url": "https://polyhaven.com/a/pachira_aquatica_01",
+      "category": "plants/foliage",
+      "gltf": "models/pachira_aquatica_01/pachira_aquatica_01_1k.gltf",
+      "sizeMB": 4.9,
+      "description": "Pachira (money tree) foliage variants, no pot",
+      "meshes": 8,
+      "nodes": 8
+    },
+    {
+      "slug": "calathea_orbifolia_01",
+      "source": "Poly Haven",
+      "id": "calathea_orbifolia_01",
+      "url": "https://polyhaven.com/a/calathea_orbifolia_01",
+      "category": "plants/foliage",
+      "gltf": "models/calathea_orbifolia_01/calathea_orbifolia_01_1k.gltf",
+      "sizeMB": 1.79,
+      "description": "Calathea foliage variants, no pot",
+      "meshes": 5,
+      "nodes": 5
+    },
+    {
+      "slug": "anthurium_botany_01",
+      "source": "Poly Haven",
+      "id": "anthurium_botany_01",
+      "url": "https://polyhaven.com/a/anthurium_botany_01",
+      "category": "plants/foliage",
+      "gltf": "models/anthurium_botany_01/anthurium_botany_01_1k.gltf",
+      "sizeMB": 3.09,
+      "description": "Anthurium foliage variants, no pot",
+      "meshes": 6,
+      "nodes": 6
+    },
+    {
+      "slug": "fern_02",
+      "source": "Poly Haven",
+      "id": "fern_02",
+      "url": "https://polyhaven.com/a/fern_02",
+      "category": "plants/foliage",
+      "gltf": "models/fern_02/fern_02_1k.gltf",
+      "sizeMB": 1.09,
+      "description": "Fern clumps, no pot",
+      "meshes": 4,
+      "nodes": 4
+    },
+    {
+      "slug": "ceramic_vase_01",
+      "source": "Poly Haven",
+      "id": "ceramic_vase_01",
+      "url": "https://polyhaven.com/a/ceramic_vase_01",
+      "category": "decor/vase",
+      "gltf": "models/ceramic_vase_01/ceramic_vase_01_1k.gltf",
+      "sizeMB": 0.4,
+      "description": "Tall white glazed ceramic bottle vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "ceramic_vase_02",
+      "source": "Poly Haven",
+      "id": "ceramic_vase_02",
+      "url": "https://polyhaven.com/a/ceramic_vase_02",
+      "category": "decor/vase",
+      "gltf": "models/ceramic_vase_02/ceramic_vase_02_1k.gltf",
+      "sizeMB": 0.72,
+      "description": "Wide white ceramic jar vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "ceramic_vase_03",
+      "source": "Poly Haven",
+      "id": "ceramic_vase_03",
+      "url": "https://polyhaven.com/a/ceramic_vase_03",
+      "category": "decor/vase",
+      "gltf": "models/ceramic_vase_03/ceramic_vase_03_1k.gltf",
+      "sizeMB": 0.73,
+      "description": "Tall square white ceramic vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "ceramic_vase_04",
+      "source": "Poly Haven",
+      "id": "ceramic_vase_04",
+      "url": "https://polyhaven.com/a/ceramic_vase_04",
+      "category": "decor/vase",
+      "gltf": "models/ceramic_vase_04/ceramic_vase_04_1k.gltf",
+      "sizeMB": 0.57,
+      "description": "White ceramic jug vase with handle",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "brass_vase_01",
+      "source": "Poly Haven",
+      "id": "brass_vase_01",
+      "url": "https://polyhaven.com/a/brass_vase_01",
+      "category": "decor/vase",
+      "gltf": "models/brass_vase_01/brass_vase_01_1k.gltf",
+      "sizeMB": 0.8,
+      "description": "Slim polished brass vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "brass_vase_02",
+      "source": "Poly Haven",
+      "id": "brass_vase_02",
+      "url": "https://polyhaven.com/a/brass_vase_02",
+      "category": "decor/vase",
+      "gltf": "models/brass_vase_02/brass_vase_02_1k.gltf",
+      "sizeMB": 1.75,
+      "description": "Brass ewer / pitcher vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "brass_vase_03",
+      "source": "Poly Haven",
+      "id": "brass_vase_03",
+      "url": "https://polyhaven.com/a/brass_vase_03",
+      "category": "decor/vase",
+      "gltf": "models/brass_vase_03/brass_vase_03_1k.gltf",
+      "sizeMB": 1.51,
+      "description": "Engraved copper-brass urn vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "brass_vase_04",
+      "source": "Poly Haven",
+      "id": "brass_vase_04",
+      "url": "https://polyhaven.com/a/brass_vase_04",
+      "category": "decor/vase",
+      "gltf": "models/brass_vase_04/brass_vase_04_1k.gltf",
+      "sizeMB": 0.38,
+      "description": "Tall brass jug vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "antique_ceramic_vase_01",
+      "source": "Poly Haven",
+      "id": "antique_ceramic_vase_01",
+      "url": "https://polyhaven.com/a/antique_ceramic_vase_01",
+      "category": "decor/vase",
+      "gltf": "models/antique_ceramic_vase_01/antique_ceramic_vase_01_1k.gltf",
+      "sizeMB": 0.5,
+      "description": "Blue-and-white patterned ceramic vase",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "brass_pot_01",
+      "source": "Poly Haven",
+      "id": "brass_pot_01",
+      "url": "https://polyhaven.com/a/brass_pot_01",
+      "category": "decor/brass",
+      "gltf": "models/brass_pot_01/brass_pot_01_1k.gltf",
+      "sizeMB": 1.45,
+      "description": "Lidded brass pot",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "brass_pot_02",
+      "source": "Poly Haven",
+      "id": "brass_pot_02",
+      "url": "https://polyhaven.com/a/brass_pot_02",
+      "category": "decor/brass",
+      "gltf": "models/brass_pot_02/brass_pot_02_1k.gltf",
+      "sizeMB": 1.35,
+      "description": "Two-handled brass/copper pot (urli-style bowl)",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "carved_wooden_elephant",
+      "source": "Poly Haven",
+      "id": "carved_wooden_elephant",
+      "url": "https://polyhaven.com/a/carved_wooden_elephant",
+      "category": "decor/sculpture",
+      "gltf": "models/carved_wooden_elephant/carved_wooden_elephant_1k.gltf",
+      "sizeMB": 1.78,
+      "description": "Carved wooden elephant figurine",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "wooden_bowl_01",
+      "source": "Poly Haven",
+      "id": "wooden_bowl_01",
+      "url": "https://polyhaven.com/a/wooden_bowl_01",
+      "category": "decor/bowl",
+      "gltf": "models/wooden_bowl_01/wooden_bowl_01_1k.gltf",
+      "sizeMB": 1.74,
+      "description": "Rustic carved wooden bowl",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "throw_pillows_01",
+      "source": "Poly Haven",
+      "id": "throw_pillows_01",
+      "url": "https://polyhaven.com/a/throw_pillows_01",
+      "category": "decor/textile",
+      "gltf": "models/throw_pillows_01/throw_pillows_01_1k.gltf",
+      "sizeMB": 1.14,
+      "description": "Pair of zig-zag patterned throw cushions",
+      "meshes": 2,
+      "nodes": 2
+    },
+    {
+      "slug": "wicker_basket_01",
+      "source": "Poly Haven",
+      "id": "wicker_basket_01",
+      "url": "https://polyhaven.com/a/wicker_basket_01",
+      "category": "decor/storage",
+      "gltf": "models/wicker_basket_01/wicker_basket_01_1k.gltf",
+      "sizeMB": 2.6,
+      "description": "Woven wicker basket",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "book_encyclopedia_set_01",
+      "source": "Poly Haven",
+      "id": "book_encyclopedia_set_01",
+      "url": "https://polyhaven.com/a/book_encyclopedia_set_01",
+      "category": "decor/books",
+      "gltf": "models/book_encyclopedia_set_01/book_encyclopedia_set_01_1k.gltf",
+      "sizeMB": 3.11,
+      "description": "Row of hardcover encyclopedia books",
+      "meshes": 20,
+      "nodes": 20
+    },
+    {
+      "slug": "hanging_picture_frame_01",
+      "source": "Poly Haven",
+      "id": "hanging_picture_frame_01",
+      "url": "https://polyhaven.com/a/hanging_picture_frame_01",
+      "category": "decor/frame",
+      "gltf": "models/hanging_picture_frame_01/hanging_picture_frame_01_1k.gltf",
+      "sizeMB": 0.38,
+      "description": "Modern thin black frame with poster",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "hanging_picture_frame_02",
+      "source": "Poly Haven",
+      "id": "hanging_picture_frame_02",
+      "url": "https://polyhaven.com/a/hanging_picture_frame_02",
+      "category": "decor/frame",
+      "gltf": "models/hanging_picture_frame_02/hanging_picture_frame_02_1k.gltf",
+      "sizeMB": 0.66,
+      "description": "White frame with landscape print",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "standing_picture_frame_01",
+      "source": "Poly Haven",
+      "id": "standing_picture_frame_01",
+      "url": "https://polyhaven.com/a/standing_picture_frame_01",
+      "category": "decor/frame",
+      "gltf": "models/standing_picture_frame_01/standing_picture_frame_01_1k.gltf",
+      "sizeMB": 0.43,
+      "description": "Black standing frame with B&W photo",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "standing_picture_frame_02",
+      "source": "Poly Haven",
+      "id": "standing_picture_frame_02",
+      "url": "https://polyhaven.com/a/standing_picture_frame_02",
+      "category": "decor/frame",
+      "gltf": "models/standing_picture_frame_02/standing_picture_frame_02_1k.gltf",
+      "sizeMB": 0.54,
+      "description": "White standing frame with landscape photo",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "fancy_picture_frame_01",
+      "source": "Poly Haven",
+      "id": "fancy_picture_frame_01",
+      "url": "https://polyhaven.com/a/fancy_picture_frame_01",
+      "category": "decor/frame",
+      "gltf": "models/fancy_picture_frame_01/fancy_picture_frame_01_1k.gltf",
+      "sizeMB": 0.71,
+      "description": "Ornate gilt frame with oil painting",
+      "meshes": 2,
+      "nodes": 2
+    },
+    {
+      "slug": "ornate_mirror_01",
+      "source": "Poly Haven",
+      "id": "ornate_mirror_01",
+      "url": "https://polyhaven.com/a/ornate_mirror_01",
+      "category": "decor/mirror",
+      "gltf": "models/ornate_mirror_01/ornate_mirror_01_1k.gltf",
+      "sizeMB": 0.65,
+      "description": "Arched gold-framed wall mirror",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "wall_clock",
+      "source": "Poly Haven",
+      "id": "wall_clock",
+      "url": "https://polyhaven.com/a/wall_clock",
+      "category": "decor/clock",
+      "gltf": "models/wall_clock/wall_clock_1k.gltf",
+      "sizeMB": 1.49,
+      "description": "Modern minimalist wall clock",
+      "meshes": 4,
+      "nodes": 4
+    },
+    {
+      "slug": "modern_wooden_cabinet",
+      "source": "Poly Haven",
+      "id": "modern_wooden_cabinet",
+      "url": "https://polyhaven.com/a/modern_wooden_cabinet",
+      "category": "storage/sideboard",
+      "gltf": "models/modern_wooden_cabinet/modern_wooden_cabinet_1k.gltf",
+      "sizeMB": 2.72,
+      "description": "Modern low wooden sideboard / TV unit with slatted doors",
+      "meshes": 3,
+      "nodes": 5
+    },
+    {
+      "slug": "wooden_display_shelves_01",
+      "source": "Poly Haven",
+      "id": "wooden_display_shelves_01",
+      "url": "https://polyhaven.com/a/wooden_display_shelves_01",
+      "category": "storage/shelves",
+      "gltf": "models/wooden_display_shelves_01/wooden_display_shelves_01_1k.gltf",
+      "sizeMB": 0.45,
+      "description": "Modern light-wood cube display shelving with bins",
+      "meshes": 4,
+      "nodes": 4
+    },
+    {
+      "slug": "tea_set_01",
+      "source": "Poly Haven",
+      "id": "tea_set_01",
+      "url": "https://polyhaven.com/a/tea_set_01",
+      "category": "kitchen/tableware",
+      "gltf": "models/tea_set_01/tea_set_01_1k.gltf",
+      "sizeMB": 2.18,
+      "description": "Porcelain tea set (teapot, cups, saucers)",
+      "meshes": 10,
+      "nodes": 10
+    },
+    {
+      "slug": "wooden_cutting_board",
+      "source": "Poly Haven",
+      "id": "wooden_cutting_board",
+      "url": "https://polyhaven.com/a/wooden_cutting_board",
+      "category": "kitchen/utensil",
+      "gltf": "models/wooden_cutting_board/wooden_cutting_board_1k.gltf",
+      "sizeMB": 1.87,
+      "description": "Wooden cutting board",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "brass_pan_01",
+      "source": "Poly Haven",
+      "id": "brass_pan_01",
+      "url": "https://polyhaven.com/a/brass_pan_01",
+      "category": "kitchen/cookware",
+      "gltf": "models/brass_pan_01/brass_pan_01_1k.gltf",
+      "sizeMB": 1.54,
+      "description": "Brass pan / kadhai with handle",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "bananas",
+      "source": "Poly Haven",
+      "id": "bananas",
+      "url": "https://polyhaven.com/a/bananas",
+      "category": "kitchen/food",
+      "gltf": "models/bananas/bananas_1k.gltf",
+      "sizeMB": 2.36,
+      "description": "Bunch of bananas",
+      "meshes": 5,
+      "nodes": 5
+    },
+    {
+      "slug": "food_apple_01",
+      "source": "Poly Haven",
+      "id": "food_apple_01",
+      "url": "https://polyhaven.com/a/food_apple_01",
+      "category": "kitchen/food",
+      "gltf": "models/food_apple_01/food_apple_01_1k.gltf",
+      "sizeMB": 0.45,
+      "description": "Red apple",
+      "meshes": 1,
+      "nodes": 1
+    },
+    {
+      "slug": "outdoor_table_chair_set_01",
+      "source": "Poly Haven",
+      "id": "outdoor_table_chair_set_01",
+      "url": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "category": "outdoor/furniture",
+      "gltf": "models/outdoor_table_chair_set_01/outdoor_table_chair_set_01_1k.gltf",
+      "sizeMB": 1.18,
+      "description": "Folding wooden bistro table with two chairs (terrace)",
+      "meshes": 3,
+      "nodes": 3
+    }
+  ]
+}
